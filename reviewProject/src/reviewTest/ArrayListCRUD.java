@@ -1,5 +1,5 @@
 package reviewTest;
-
+// hi
 import java.util.ArrayList;
 
 import dtoCollections.EmployeeDTO;
@@ -7,22 +7,22 @@ import exception.DuplicateException;
 import exception.NonExistentException;
 
 public class ArrayListCRUD {
-	// °´Ã¼ »ı¼ºÀ» ÇØ¾ß¸¸ »ç¿ë °¡´ÉÇÑ º¯¼ö·Î ¼±¾ğ½Ã¿¡´Â(=static ¾ø´Ù¸é), static {} ³»ºÎ¿¡¼± È£Ãâ ºÒ°¡
+	// ê°ì²´ ìƒì„±ì„ í•´ì•¼ë§Œ ì‚¬ìš© ê°€ëŠ¥í•œ ë³€ìˆ˜ë¡œ ì„ ì–¸ì‹œì—ëŠ”(=static ì—†ë‹¤ë©´), static {} ë‚´ë¶€ì—ì„  í˜¸ì¶œ ë¶ˆê°€
 	private static ArrayList<EmployeeDTO> al = new ArrayList<>();
 	
-	// °´Ã¼ »ı¼º ½ÃÁ¡°ú ¹«°üÇÏ°Ô ListTest2.class°¡ ·Îµù½Ã¿¡ ÀÚµ¿ ½ÇÇà
+	// ê°ì²´ ìƒì„± ì‹œì ê³¼ ë¬´ê´€í•˜ê²Œ ListTest2.classê°€ ë¡œë”©ì‹œì— ìë™ ì‹¤í–‰
 	static {
 		al.add(EmployeeDTO.builder().empno(1).ename("Park").deptno("11").build());
 		al.add(EmployeeDTO.builder().empno(2).ename("Lee").deptno("22").build());
 	}
 	
-	// create() - Employee °´Ã¼µé ArrayList ÀúÀå (Insert)
-	// ±âÁ¸ÀÇ empno¿Í »õ·Î »ı¼ºÇÏ´Â °´Ã¼ÀÇ empno¸¦ ºñ±³ÇÏ¿© °°´Ù¸é ¿¹¿Ü Ã³¸®¸¦ ÇÏ´Â ·ÎÁ÷À» Ãß°¡ÇÏÀÚ
+	// create() - Employee ê°ì²´ë“¤ ArrayList ì €ì¥ (Insert)
+	// ê¸°ì¡´ì˜ empnoì™€ ìƒˆë¡œ ìƒì„±í•˜ëŠ” ê°ì²´ì˜ empnoë¥¼ ë¹„êµí•˜ì—¬ ê°™ë‹¤ë©´ ì˜ˆì™¸ ì²˜ë¦¬ë¥¼ í•˜ëŠ” ë¡œì§ì„ ì¶”ê°€í•˜ì
 	public static void createEmp(EmployeeDTO emp) throws DuplicateException {
 		
 			for(EmployeeDTO e : al) {
 				if(e.getEmpno() == emp.getEmpno()) {					
-					throw new DuplicateException("ÀÌ¹Ì Á¸ÀçÇÏ´Â empno ÀÔ´Ï´Ù.");		
+					throw new DuplicateException("ì´ë¯¸ ì¡´ì¬í•˜ëŠ” empno ì…ë‹ˆë‹¤.");		
 				}		
 			}
 			
@@ -30,7 +30,7 @@ public class ArrayListCRUD {
 			
 	}
 	
-	// readAllEmp() : ¸ğµç Á÷¿ø °Ë»ö
+	// readAllEmp() : ëª¨ë“  ì§ì› ê²€ìƒ‰
 	public static void readAllEmp() {
 		
 		for(EmployeeDTO e : al) {
@@ -39,8 +39,8 @@ public class ArrayListCRUD {
 		
 	}
 	
-	// readEmp() - empno »ç¹øÀ¸·Î ÇÑ ¸íÀÇ Á÷¿ø °Ë»ö
-	// °´Ã¼ Å¸ÀÔÀÇ ±âº»°ªÀº null
+	// readEmp() - empno ì‚¬ë²ˆìœ¼ë¡œ í•œ ëª…ì˜ ì§ì› ê²€ìƒ‰
+	// ê°ì²´ íƒ€ì…ì˜ ê¸°ë³¸ê°’ì€ null
 	public static EmployeeDTO readEmp(int empno) throws NonExistentException{
 		
 		for(EmployeeDTO e : al ) {
@@ -49,14 +49,14 @@ public class ArrayListCRUD {
 			}
 		}
 		
-		throw new NonExistentException("Á¸ÀçÇÏÁö ¾Ê´Â empno ÀÔ´Ï´Ù.");
+		throw new NonExistentException("ì¡´ì¬í•˜ì§€ ì•ŠëŠ” empno ì…ë‹ˆë‹¤.");
 		
 	}
 	
 
-	// updateEmp() : ÇÑ ¸íÀÇ »ç¿øÀÇ ºÎ¼­¹øÈ£ °»½Å
-	// 'empno'¸¦ ÀÌ¿ëÇÏ¿© ÇØ´ç »ç¿øÀ» Ã£°í, ºÎ¼­ ¹øÈ£ °»½Å
-	// ¼º°ø ¿©ºÎ ¹İÈ¯
+	// updateEmp() : í•œ ëª…ì˜ ì‚¬ì›ì˜ ë¶€ì„œë²ˆí˜¸ ê°±ì‹ 
+	// 'empno'ë¥¼ ì´ìš©í•˜ì—¬ í•´ë‹¹ ì‚¬ì›ì„ ì°¾ê³ , ë¶€ì„œ ë²ˆí˜¸ ê°±ì‹ 
+	// ì„±ê³µ ì—¬ë¶€ ë°˜í™˜
 	public static boolean updateEmp(int empno, String deptno) throws NonExistentException{
 		
 		for(EmployeeDTO e : al) {
@@ -66,11 +66,11 @@ public class ArrayListCRUD {
 			}
 		}
 		
-		throw new NonExistentException("Á¸ÀçÇÏÁö ¾Ê´Â »ç¹øÀÔ´Ï´Ù.");
+		throw new NonExistentException("ì¡´ì¬í•˜ì§€ ì•ŠëŠ” ì‚¬ë²ˆì…ë‹ˆë‹¤.");
 		
 	}
 	
-	// delete() - Á¸ÀçÇÏ´Â ÇÑ ¸íÀÇ »ç¿ø »èÁ¦
+	// delete() - ì¡´ì¬í•˜ëŠ” í•œ ëª…ì˜ ì‚¬ì› ì‚­ì œ
 	private static void deleteEmp(int empno) throws NonExistentException{
 		
 		for(int i = 0; i < al.size(); i++) {
@@ -80,13 +80,13 @@ public class ArrayListCRUD {
 			}
 		}
 		
-		throw new NonExistentException("Á¸ÀçÇÏÁö ¾Ê´Â »ç¹øÀÔ´Ï´Ù.");
+		throw new NonExistentException("ì¡´ì¬í•˜ì§€ ì•ŠëŠ” ì‚¬ë²ˆì…ë‹ˆë‹¤.");
 	}
 	
 	
 	public static void main(String[] args) {
 		
-		System.out.println("***** »õ Á÷¿ø ÀúÀå *****");
+		System.out.println("***** ìƒˆ ì§ì› ì €ì¥ *****");
 		try {
 			createEmp(EmployeeDTO.builder().empno(3).ename("Kim").deptno("33").build());
 			createEmp(EmployeeDTO.builder().empno(4).ename("Lim").deptno("44").build());
@@ -95,11 +95,11 @@ public class ArrayListCRUD {
 		}
 		
 		
-		System.out.println("***** ¸ğµç Á÷¿ø °Ë»ö *****");
+		System.out.println("***** ëª¨ë“  ì§ì› ê²€ìƒ‰ *****");
 		readAllEmp();
 		
 		
-		System.out.println("***** Á÷¿ø °Ë»ö *****");
+		System.out.println("***** ì§ì› ê²€ìƒ‰ *****");
 		try {
 			System.out.println(readEmp(2));
 		} catch(NonExistentException e) {
@@ -107,24 +107,24 @@ public class ArrayListCRUD {
 		}
 		
 		
-		System.out.println("***** Á÷¿ø Á¤º¸ ¼öÁ¤ *****");
+		System.out.println("***** ì§ì› ì •ë³´ ìˆ˜ì • *****");
 		try {
-			System.out.println("¼öÁ¤ °á°ú : " + updateEmp(1, "33"));
+			System.out.println("ìˆ˜ì • ê²°ê³¼ : " + updateEmp(1, "33"));
 		} catch(NonExistentException e) {
 			System.out.println(e.getMessage());
 		}
 		
 		
-		System.out.println("***** Á÷¿ø Á¤º¸ »èÁ¦ *****");
+		System.out.println("***** ì§ì› ì •ë³´ ì‚­ì œ *****");
 		try {
 			deleteEmp(2);
-			System.out.println("»èÁ¦ ¿Ï·á");
+			System.out.println("ì‚­ì œ ì™„ë£Œ");
 		} catch (NonExistentException e) {
 			System.out.println(e.getMessage());
 		}
 		
 		
-		System.out.println("***** ¸ğµç Á÷¿ø °Ë»ö *****");
+		System.out.println("***** ëª¨ë“  ì§ì› ê²€ìƒ‰ *****");
 		readAllEmp();
 		
 
