@@ -19,11 +19,11 @@ Java Web Project - 카페 키오스크
   - 주문 현황 확인
   - 회원가입
 
-
 - 직원
   - 주문 현황 확인
   - 주문 상태 변경하기
 
+![MVC](https://user-images.githubusercontent.com/97461823/154696471-73d62bae-7450-440d-8fdc-21e15e978bc9.JPG)
 
 
 
