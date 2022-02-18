@@ -27,6 +27,7 @@ Java Web Project - 카페 키오스크
 MVC
 ![MVC](https://user-images.githubusercontent.com/97461823/154696471-73d62bae-7450-440d-8fdc-21e15e978bc9.JPG)
 
+
 DB 구성 (ERD)
 ![ERD](https://user-images.githubusercontent.com/97461823/154696867-72c89b79-134c-4eee-a5f0-39bf196bced0.JPG)
 
