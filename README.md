@@ -31,6 +31,9 @@ Java Web Project - 카페 키오스크
 <hr>
 
 ### 실행 화면
+<고객>
+#### 초기 화면
+![customer](https://user-images.githubusercontent.com/97461823/154826861-f8e33a6e-3d67-431b-9b78-55f934a0c358.JPG)
 
 ### Issues
 1. sysdate 출력 형식 관련 이슈
