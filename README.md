@@ -34,6 +34,24 @@ Java Web Project - 카페 키오스크
 <고객>
 - 초기 화면
 ![customer](https://user-images.githubusercontent.com/97461823/154826861-f8e33a6e-3d67-431b-9b78-55f934a0c358.JPG)
+- 주문
+![order](https://user-images.githubusercontent.com/97461823/154827526-38c84cd1-46eb-458b-8725-6a219c572253.JPG)
+- 결제 완료
+![payment](https://user-images.githubusercontent.com/97461823/154827529-d11bbb3f-6226-4625-8250-902f46d840f3.JPG)
+- 주문 현황 확인
+![customer_order_check](https://user-images.githubusercontent.com/97461823/154827534-8bdaa783-e69c-4459-958a-89062695d424.JPG)
+- 회원가입
+![signup](https://user-images.githubusercontent.com/97461823/154827549-286c73c8-fba4-4884-9823-08e4602d82fc.JPG)
+- 회원가입 결과
+![signup_result](https://user-images.githubusercontent.com/97461823/154827555-f83322af-e732-49d9-9c3e-b302f24bfb57.JPG)
+  - DB에 추가된 결과  
+  ![signup_result_db](https://user-images.githubusercontent.com/97461823/154827558-99327eb6-7b50-453f-8938-8b72d015ffe2.JPG)  
+
+<직원>
+- 초기 화면
+![employee](https://user-images.githubusercontent.com/97461823/154826865-983c5b7b-3a93-417f-813b-f619d3350242.JPG)
+- 주문 현황 확인
+![employee_order_check](https://user-images.githubusercontent.com/97461823/154827562-89aa0892-9b94-4a94-952f-b994904c6e10.JPG)
 
 ### Issues
 1. sysdate 출력 형식 관련 이슈
