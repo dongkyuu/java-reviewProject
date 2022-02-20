@@ -32,7 +32,7 @@ Java Web Project - 카페 키오스크
 <hr>
 
 ### 실행 화면
-<고객>
+### <고객>
 - 초기 화면
 ![customer](https://user-images.githubusercontent.com/97461823/154826861-f8e33a6e-3d67-431b-9b78-55f934a0c358.JPG)
 - 주문
@@ -48,7 +48,7 @@ Java Web Project - 카페 키오스크
   - DB에 추가된 결과  
   ![signup_result_db](https://user-images.githubusercontent.com/97461823/154827558-99327eb6-7b50-453f-8938-8b72d015ffe2.JPG)  
 
-<직원>
+### <직원>
 - 초기 화면
 ![employee](https://user-images.githubusercontent.com/97461823/154826865-983c5b7b-3a93-417f-813b-f619d3350242.JPG)
 - 주문 현황 확인
