@@ -28,6 +28,7 @@ Java Web Project - 카페 키오스크
 
 - DB 구성 (ERD)  
 ![ERD](https://user-images.githubusercontent.com/97461823/154696867-72c89b79-134c-4eee-a5f0-39bf196bced0.JPG)
+
 <hr>
 
 ### 실행 화면
@@ -52,6 +53,8 @@ Java Web Project - 카페 키오스크
 ![employee](https://user-images.githubusercontent.com/97461823/154826865-983c5b7b-3a93-417f-813b-f619d3350242.JPG)
 - 주문 현황 확인
 ![employee_order_check](https://user-images.githubusercontent.com/97461823/154827562-89aa0892-9b94-4a94-952f-b994904c6e10.JPG)
+
+<hr>
 
 ### Issues
 1. sysdate 출력 형식 관련 이슈
