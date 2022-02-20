@@ -58,16 +58,16 @@ Java Web Project - 카페 키오스크
 
 ### Issues
 1. sysdate 출력 형식 관련 이슈
-  - cmd에서 DB에 접속 후, select sysdate from duel; 문잘 실행 시 yy/mm/dd 형식으로 출력됨
-  - 이것을 yyyy-mm-dd hh:mi:ss 형식으로 출력하기 위해 다음과 같이 세션 변경 문장 실행
-    - ALTER session SET NLS_DATE_FORMAT='yyyy-mm-dd hh:mi:ss';
+    - cmd에서 DB에 접속 후, select sysdate from duel; 문잘 실행 시 yy/mm/dd 형식으로 출력됨
+    - 이것을 yyyy-mm-dd hh:mi:ss 형식으로 출력하기 위해 다음과 같이 세션 변경 문장 실행
+      - ALTER session SET NLS_DATE_FORMAT='yyyy-mm-dd hh:mi:ss';
 
 2. tomcat 포트 관련 이슈
-  - 코드 실행 에러 내용 : Port 8005 required by Tomcat v9.0 Server at localhost is already in use
-    - 해결 순서 :
-      1. cmd 실행
-      2. netstat -p tcp ano 입력 후 엔터
-      3. 8005에 해당하는 pid 번호 확인 후, taskkill /f /pid pid번호 입력 후 엔터
+    - 코드 실행 에러 내용 : Port 8005 required by Tomcat v9.0 Server at localhost is already in use
+      - 해결 순서 :
+        1. cmd 실행
+        2. netstat -p tcp ano 입력 후 엔터
+        3. 8005에 해당하는 pid 번호 확인 후, taskkill /f /pid pid번호 입력 후 엔터
 
 ### 개선할 사항
 - point로 결제시, 보유 포인트 확인 및 결제 금액 만큼 고객 테이블의 포인트에서 차감 
