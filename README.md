@@ -1,4 +1,4 @@
-# java_reviewProject
+# java-reviewProject
 
 이 repository는 빅데이터 부트캠프를 진행하면서 학습한 내용을 리뷰하는 프로젝트를 올리는 저장소입니다.  
 프로젝트는 reviewProject, step05_aap 가 있습니다.  
